@@ -62,11 +62,11 @@
             </div>
             <div class="panel-body">
                 <center>
-                    <a class="btn btn-lg btn-primary" href="#">
+                    <a class="btn btn-lg btn-primary" href="/classes">
                         With Levels
                     </a>
                     OR
-                    <a class="btn btn-lg btn-primary" href="#">
+                    <a class="btn btn-lg btn-primary" href="/subjects">
                         With Subjects
                     </a>
                 </center>
@@ -76,10 +76,10 @@
             <a href="#" class="list-group-item active">
                 <h4>Most Popular</h4>
             </a>
-            <a href="#" class="list-group-item">Force : Basic Concept</a>
-            <a href="#" class="list-group-item">Abiotic Components</a>
-            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-            <a href="#" class="list-group-item">Vestibulum at eros</a>
+            <a href="/maths/decimals/addition-and-subtraction-of-decimals" class="list-group-item">Addition And Subtraction Of Decimals</a>
+            <a href="/classes/level-3" class="list-group-item">Level 3</a>
+            <a href="/subjects/mental-ability" class="list-group-item">Mental Ability</a>
+            <a href="/mental-ability/coding-and-decoding" class="list-group-item">Coding and decoding</a>
         </div>
 
     </div>

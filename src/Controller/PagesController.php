@@ -76,8 +76,19 @@ class PagesController extends AppController
         $this->set('_serialize', ['klasses','subjects']);
     }
     public function subjectsdir($slug = null){
-        echo $slug;
-        exit;
+        $klTbl = \Cake\ORM\TableRegistry::get('Subjects');
+        if($slug == null){
+            $classes = $klTbl->find()->all();
+            $this->set('klasses', $classes);
+            $this->set('_serialize', ['klasses']);
+        }else{
+            $class = $klTbl->findBySlug($slug)->contain(['Chapters','Chapters.Klasses','Chapters.Subjects'])->first();
+            if(!$class)
+                throw new NotFoundException('Page Not Found');
+            $this->set('klass', $class);
+            $this->set('_serialize', ['klass']); 
+            $this->render('subjectdata');
+        }
     }
     public function classesdir($slug = null){
         $klTbl = \Cake\ORM\TableRegistry::get('Klasses');

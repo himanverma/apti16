@@ -4,9 +4,9 @@
         <div class="alert alert-info alert-dismissible fade in" role="alert"> 
             <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>--> 
             <h4><?= $kl->title ?></h4> 
-            <p style="min-height: 30px">
+            <p>
                 <?= $kl->details ?>
-                <a href="/classes/<?= $kl->slug ?>" style="margin-top: -30px" class="btn btn-primary pull-right">Browse</a> 
+                <a href="/subjects/<?= $kl->slug ?>" style="margin-top: -30px" class="btn btn-primary pull-right">Browse</a> 
             </p>  
         </div>
     </div>
